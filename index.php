@@ -11,22 +11,16 @@ use App\Zoo\Zoo;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+$zoo = new Zoo();
 
-function main(): void
-{
-    $zoo = new Zoo();
+$animals = getAnimals();
 
-    $animals  = getAnimals();
+foreach ($animals as $animal) {
+    $zoo->addAnimal($animal);
+}
 
-    foreach ($animals as $animal)
-    {
-        $zoo->addAnimal($animal);
-    }
-
-    foreach ($zoo->getAnimals() as $animalInZoo)
-    {
-        echo $animalInZoo.PHP_EOL;
-    }
+foreach ($zoo->getAnimals() as $animalInZoo) {
+    echo $animalInZoo . PHP_EOL;
 }
 
 /**
@@ -43,7 +37,5 @@ function getAnimals(): array
         new Rabbit('Krolikowski')
     ];
 }
-
-main();
 
 

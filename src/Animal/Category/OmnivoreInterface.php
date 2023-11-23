@@ -4,7 +4,7 @@ namespace App\Animal\Category;
 
 use App\Animal\Meals\MealInterface;
 
-interface OmnivorousInterface
+interface OmnivoreInterface
 {
     public function feed(MealInterface $meal): string;
 }

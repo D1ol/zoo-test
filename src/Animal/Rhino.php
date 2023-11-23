@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace App\Animal;
 
-use App\Animal\Category\Herbivorous;
+use App\Animal\Category\Herbivore;
 
-final class Rhino extends Herbivorous
+final class Rhino extends Herbivore
 {
-
 }

@@ -2,7 +2,7 @@
 
 namespace App\Animal\Combing;
 
-interface CombingInterface
+interface CombableInterface
 {
     public function comb(): string;
 }

@@ -4,7 +4,7 @@ namespace App\Animal\Category;
 
 use App\Animal\Meals\PlantMeal;
 
-interface HerbivorousInterface
+interface HerbivoreInterface
 {
     public function feed(PlantMeal $plantMeal): string;
 }

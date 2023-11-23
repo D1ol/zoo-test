@@ -14,7 +14,7 @@ class Zoo
     private array $animals;
 
     /**
-     * @return array
+     * @return AnimalInterface[]
      */
     public function getAnimals(): array
     {

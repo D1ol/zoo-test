@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace App\Animal;
 
+use App\Animal\Category\Omnivore;
+use App\Animal\Combing\CombableInterface;
 
-use App\Animal\Category\Omnivorous;
-use App\Animal\Combing\CombingInterface;
-
-final class Fox extends Omnivorous implements CombingInterface
+final class Fox extends Omnivore implements CombableInterface
 {
     public function comb(): string
     {

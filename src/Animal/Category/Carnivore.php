@@ -7,10 +7,10 @@ namespace App\Animal\Category;
 use App\Animal\Animal;
 use App\Animal\Meals\MeatMeal;
 
-abstract class Carnivores extends Animal implements CarnivoresInterface
+abstract class Carnivore extends Animal implements CarnivoreInterface
 {
     public function feed(MeatMeal $meatMeal): string
     {
-        return sprintf('Om-nom-nom %s', $meatMeal->getName());
+        return sprintf('Im carnivore and i want %s', $meatMeal->getName());
     }
 }

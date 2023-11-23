@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Animal;
 
-use App\Animal\Category\Carnivores;
-use App\Animal\Combing\CombingInterface;
+use App\Animal\Category\Carnivore;
+use App\Animal\Combing\CombableInterface;
 
-class SnowLeopard extends Carnivores implements CombingInterface
+class SnowLeopard extends Carnivore implements CombableInterface
 {
     public function comb(): string
     {

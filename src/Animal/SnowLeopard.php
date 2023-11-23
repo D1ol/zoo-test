@@ -7,7 +7,7 @@ namespace App\Animal;
 use App\Animal\Category\Carnivore;
 use App\Animal\Combing\CombableInterface;
 
-readonly class SnowLeopard extends Carnivore implements CombableInterface
+readonly final class SnowLeopard extends Carnivore implements CombableInterface
 {
     public function comb(): string
     {

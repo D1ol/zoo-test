@@ -7,7 +7,7 @@ namespace App\Animal\Category;
 use App\Animal\Animal;
 use App\Animal\Meals\MealInterface;
 
-abstract class Omnivore extends Animal
+readonly abstract class Omnivore extends Animal
 {
     public function feed(MealInterface $meal): string
     {

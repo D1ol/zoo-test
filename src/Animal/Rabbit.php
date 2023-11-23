@@ -7,7 +7,7 @@ namespace App\Animal;
 use App\Animal\Category\Herbivore;
 use App\Animal\Combing\CombableInterface;
 
-final class Rabbit extends Herbivore implements CombableInterface
+readonly final class Rabbit extends Herbivore implements CombableInterface
 {
     public function comb(): string
     {

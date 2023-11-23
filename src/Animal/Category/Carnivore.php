@@ -7,7 +7,7 @@ namespace App\Animal\Category;
 use App\Animal\Animal;
 use App\Animal\Meals\MeatMeal;
 
-abstract class Carnivore extends Animal implements CarnivoreInterface
+readonly abstract class Carnivore extends Animal implements CarnivoreInterface
 {
     public function feed(MeatMeal $meatMeal): string
     {

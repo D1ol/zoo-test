@@ -7,7 +7,7 @@ namespace App\Animal\Category;
 use App\Animal\Animal;
 use App\Animal\Meals\PlantMeal;
 
-abstract class Herbivore extends Animal
+readonly abstract class Herbivore extends Animal
 {
     public function feed(PlantMeal $plantMeal): string
     {

@@ -6,6 +6,6 @@ namespace App\Animal;
 
 use App\Animal\Category\Carnivore;
 
-final class Tiger extends Carnivore
+readonly final class Tiger extends Carnivore
 {
 }

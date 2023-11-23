@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Animal;
 
-class Animal implements AnimalInterface
+readonly class Animal implements AnimalInterface
 {
     //As another option, we can add kind of animal here also
     public function __construct(private string $name)

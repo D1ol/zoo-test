@@ -6,6 +6,6 @@ namespace App\Animal;
 
 use App\Animal\Category\Herbivore;
 
-final class Rhino extends Herbivore
+readonly final class Rhino extends Herbivore
 {
 }

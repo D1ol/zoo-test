@@ -10,7 +10,7 @@ CREATE SCHEMA IF NOT EXISTS exampleSchema;
 CREATE TABLE author
 (
     id      SERIAL PRIMARY KEY NOT NULL,
-    name    varchar(255)       NOT NULL,
+    name    VARCHAR(255)       NOT NULL,
     surname VARCHAR(255)       NOT NULL
 );
 
@@ -25,7 +25,7 @@ CREATE TABLE book
 (
     id    SERIAL PRIMARY KEY NOT NULL,
     title VARCHAR(255)       NOT NULL,
-    year  INT                NOT NULL,
+    year  INTEGER                NOT NULL,
     isbn  VARCHAR(255)       NOT NULL
 );
 
@@ -39,7 +39,7 @@ CREATE TABLE review
 (
     id      SERIAL PRIMARY KEY NOT NULL,
     book_id INTEGER REFERENCES book (id),
-    score   INT                NOT NULL,
+    score   INTEGER            NOT NULL,
     comment VARCHAR            NOT NULL
 );
 

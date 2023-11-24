@@ -4,10 +4,14 @@ declare(strict_types=1);
 
 namespace App\Animal;
 
+use App\Animal\Enum\AnimalTypeEnum;
+
 readonly class Animal implements AnimalInterface
 {
-    //As another option, we can add kind of animal here also
-    public function __construct(private string $name)
+    public function __construct(
+        private string $name,
+        private AnimalTypeEnum $type,
+    )
     {
     }
 
@@ -16,8 +20,13 @@ readonly class Animal implements AnimalInterface
         return $this->name;
     }
 
+    public function getType(): AnimalTypeEnum
+    {
+        return $this->type;
+    }
+
     public function __toString(): string
     {
-        return sprintf('%s %s', (new \ReflectionClass($this))->getShortName(), $this->name);
+        return sprintf('%s %s', $this->type->value, $this->name);
     }
 }
